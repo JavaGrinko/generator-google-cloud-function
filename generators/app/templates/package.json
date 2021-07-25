@@ -1,0 +1,15 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "gcloud functions deploy <%= name %> --runtime nodejs14 --trigger-http --entry-point index --max-instances 1",
+    "start": "node -e 'require(\"./index\").index({}, {})'"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "moment": "^2.29.1",
+    "request": "^2.88.0",
+    "request-debug": "^0.2.0",
+    "request-promise": "^4.2.4"
+  }
+}
