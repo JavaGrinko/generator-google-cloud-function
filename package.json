@@ -1,6 +1,6 @@
 {
   "name": "generator-google-cloud-function",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Google Cloud Function (NodeJS)",
   "homepage": "https://github.com/JavaGrinko/generator-google-cloud-function",
   "author": {

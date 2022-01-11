@@ -33,7 +33,7 @@ module.exports = class extends Generator {
       this.destinationPath('package.json'),
       {name: this.props.name}
     );
-    this.fs.copy(this.templatePath('.env'), this.destinationPath('.env'));
+    this.fs.copy(this.templatePath('env'), this.destinationPath('.env'));
     this.fs.copy(this.templatePath('.gcloudignore'), this.destinationPath('.gcloudignore'));
     this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
     this.fs.copy(this.templatePath('index.js'), this.destinationPath('index.js'));
